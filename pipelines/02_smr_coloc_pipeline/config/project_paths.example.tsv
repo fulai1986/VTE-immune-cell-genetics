@@ -1,0 +1,8 @@
+key	value	description
+PROJECT_DIR	/path/to/onek1k_pbmc_eqtl	Root directory for this project; alternatively export PROJECT_DIR before running scripts.
+SMR_BINARY	tools/smr/source/SMR/build/RelWithDebInfo/smr	Locally compiled SMR executable used for SMR discovery analysis.
+FINNGEN_GWAS_SMRSUM	gwas/replication/finngen_r13/harmonized_oneK1K_ld/finngen_R13_I9_VTE.hg19.onek1k_ld_harmonized.smr.ma	FinnGen VTE GWAS summary statistics in SMR .ma format, lifted/harmonized to GRCh37 and OneK1K LD SNPs.
+ONEK1K_LD_ROOT	results/ld_reference/onek1k	Per-chromosome PLINK LD reference generated from OneK1K genotype data.
+ONEK1K_EQTL_SMR_ROOT	results/smr	Cell-type-specific eQTL files exported for SMR.
+SCIENCE14_CELLTYPES	config/science14_celltypes.tsv	Cell type list following the 14 PBMC cell classes used in the manuscript.
+TOP_SNP_RSID_MAP	manuscript_results/tables/top_snp_rsid_mapping_hg19.tsv	rsID mapping for top SNP labels on GRCh37/hg19.

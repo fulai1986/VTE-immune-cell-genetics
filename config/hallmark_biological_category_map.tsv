@@ -1,0 +1,51 @@
+hallmark	category
+INFLAMMATORY_RESPONSE	Immune / inflammatory / coagulation
+TNFA_SIGNALING_VIA_NFKB	Immune / inflammatory / coagulation
+INTERFERON_ALPHA_RESPONSE	Immune / inflammatory / coagulation
+INTERFERON_GAMMA_RESPONSE	Immune / inflammatory / coagulation
+IL6_JAK_STAT3_SIGNALING	Immune / inflammatory / coagulation
+IL2_STAT5_SIGNALING	Immune / inflammatory / coagulation
+COMPLEMENT	Immune / inflammatory / coagulation
+ALLOGRAFT_REJECTION	Immune / inflammatory / coagulation
+COAGULATION	Immune / inflammatory / coagulation
+OXIDATIVE_PHOSPHORYLATION	Metabolic remodeling
+GLYCOLYSIS	Metabolic remodeling
+FATTY_ACID_METABOLISM	Metabolic remodeling
+CHOLESTEROL_HOMEOSTASIS	Metabolic remodeling
+BILE_ACID_METABOLISM	Metabolic remodeling
+PEROXISOME	Metabolic remodeling
+ADIPOGENESIS	Metabolic remodeling
+HEME_METABOLISM	Metabolic remodeling
+XENOBIOTIC_METABOLISM	Metabolic remodeling
+REACTIVE_OXYGEN_SPECIES_PATHWAY	Stress / apoptosis / DNA damage
+HYPOXIA	Stress / apoptosis / DNA damage
+APOPTOSIS	Stress / apoptosis / DNA damage
+P53_PATHWAY	Stress / apoptosis / DNA damage
+UNFOLDED_PROTEIN_RESPONSE	Stress / apoptosis / DNA damage
+DNA_REPAIR	Stress / apoptosis / DNA damage
+UV_RESPONSE_DN	Stress / apoptosis / DNA damage
+UV_RESPONSE_UP	Stress / apoptosis / DNA damage
+MTORC1_SIGNALING	Growth-factor and signaling pathways
+PI3K_AKT_MTOR_SIGNALING	Growth-factor and signaling pathways
+KRAS_SIGNALING_UP	Growth-factor and signaling pathways
+KRAS_SIGNALING_DN	Growth-factor and signaling pathways
+TGF_BETA_SIGNALING	Growth-factor and signaling pathways
+NOTCH_SIGNALING	Growth-factor and signaling pathways
+WNT_BETA_CATENIN_SIGNALING	Growth-factor and signaling pathways
+HEDGEHOG_SIGNALING	Growth-factor and signaling pathways
+ANDROGEN_RESPONSE	Growth-factor and signaling pathways
+ESTROGEN_RESPONSE_EARLY	Growth-factor and signaling pathways
+ESTROGEN_RESPONSE_LATE	Growth-factor and signaling pathways
+APICAL_JUNCTION	Adhesion / tissue remodeling / secretion
+APICAL_SURFACE	Adhesion / tissue remodeling / secretion
+EPITHELIAL_MESENCHYMAL_TRANSITION	Adhesion / tissue remodeling / secretion
+ANGIOGENESIS	Adhesion / tissue remodeling / secretion
+PROTEIN_SECRETION	Adhesion / tissue remodeling / secretion
+MYOGENESIS	Adhesion / tissue remodeling / secretion
+E2F_TARGETS	Cell cycle / proliferation
+G2M_CHECKPOINT	Cell cycle / proliferation
+MYC_TARGETS_V1	Cell cycle / proliferation
+MYC_TARGETS_V2	Cell cycle / proliferation
+MITOTIC_SPINDLE	Cell cycle / proliferation
+PANCREAS_BETA_CELLS	Tissue-specific / less interpretable in PBMC
+SPERMATOGENESIS	Tissue-specific / less interpretable in PBMC

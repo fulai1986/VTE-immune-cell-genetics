@@ -1,0 +1,10 @@
+package	version
+data.table	1.18.4
+Matrix	1.7.4
+Seurat	5.5.1
+coloc	5.2.3
+ggplot2	4.0.3
+gridExtra	2.3.1
+png	0.1.9
+scales	1.4.0
+svglite	2.2.2

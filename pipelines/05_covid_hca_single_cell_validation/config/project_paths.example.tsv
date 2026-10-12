@@ -1,0 +1,7 @@
+key	path	description
+project_dir	/path/to/onek1k_pbmc_eqtl	Local project workspace; export as PROJECT_DIR
+hca_h5ad	/path/to/Stephenson_et_al_2021_covid_pbmc.h5ad	HCA COVID-19 PBMC single-cell object
+onek1k_metadata	/path/to/onek1k_science14_metadata.tsv	OneK1K cell metadata with science14 labels
+onek1k_raw_counts	/path/to/onek1k_raw_counts	OneK1K raw count matrices grouped by pool
+msigdb_hallmark	/path/to/h.all.v202x.Hs.symbols.gmt	MSigDB Hallmark gene sets
+liana_resource	consensus	LIANA consensus ligand-receptor resource

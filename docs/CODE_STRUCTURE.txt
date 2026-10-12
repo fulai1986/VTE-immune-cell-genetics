@@ -1,0 +1,155 @@
+github_release/
+├── .github/
+│   └── workflows/
+│       └── validate.yml
+├── config/
+│   ├── hallmark_biological_category_map.tsv
+│   └── workflows.json
+├── docs/
+│   ├── CODE_STRUCTURE.txt
+│   ├── DATA_INPUTS.md
+│   ├── ENVIRONMENT.md
+│   ├── VALIDATION.md
+│   ├── WORKFLOW.md
+│   ├── r-package-versions.tsv
+│   └── source_manifest.json
+├── pipelines/
+│   ├── 00_reference_preparation/
+│   │   ├── 09_liftover_finngen_r13_to_grch37.py
+│   │   ├── 10_harmonize_finngen_r13_to_onek1k_ld.py
+│   │   ├── 16_make_onek1k_ld_reference.py
+│   │   ├── 18_prepare_smr_qfile_besd.py
+│   │   └── README.md
+│   ├── 01_eqtl_pipeline/
+│   │   ├── config/
+│   │   │   └── project_paths.example.tsv
+│   │   ├── figures/
+│   │   │   ├── 01_plot_figure2a_sample_basis.R
+│   │   │   ├── 02_plot_figure2b_egene_counts.R
+│   │   │   ├── 03_plot_figure2c_egene_sharing_upset.R
+│   │   │   ├── 04_plot_figure2d_egene_jaccard_heatmap.R
+│   │   │   ├── 05_plot_figure2e_onek1k_concordance_heatmap.R
+│   │   │   ├── 06_assemble_figure2.R
+│   │   │   └── 07_plot_figure_s1_random_concordance_heatmap.R
+│   │   ├── qc/
+│   │   │   ├── 01_prepare_onek1k_concordance_benchmark.R
+│   │   │   └── 02_make_eqtl_supplementary_tables.R
+│   │   ├── scripts/
+│   │   │   ├── 00_check_inputs.py
+│   │   │   ├── 01_make_science14_metadata.py
+│   │   │   ├── 02_make_celltype_pseudobulk_expression.R
+│   │   │   ├── 03_run_all_pseudobulk.sh
+│   │   │   ├── 04_summarize_pseudobulk.py
+│   │   │   ├── 05_prepare_eqtl_covariates.py
+│   │   │   ├── 06_inspect_imputed_vcf.py
+│   │   │   ├── 07_build_vcf_sample_map.py
+│   │   │   ├── 08_run_chr_full_eqtl.py
+│   │   │   ├── 09_run_full_eqtl_queue.sh
+│   │   │   ├── 10_run_egene_eigenmt_cell_chr_plink.R
+│   │   │   ├── 11_run_egene_eigenmt_queue.sh
+│   │   │   ├── 12_summarize_egene_eigenmt_cell.R
+│   │   │   └── 13_check_egene_eigenmt_status.R
+│   │   └── README.md
+│   ├── 02_smr_coloc_pipeline/
+│   │   ├── coloc/
+│   │   │   ├── 01_run_coloc_abf_finngen_discovery_hits.R
+│   │   │   └── 02_assign_evidence_tiers.R
+│   │   ├── config/
+│   │   │   ├── project_paths.example.tsv
+│   │   │   └── science14_celltypes.tsv
+│   │   ├── figures/
+│   │   │   ├── 01_plot_figure3a_ranked_stacked_bar.R
+│   │   │   ├── 02_plot_figure3b_tier1_3_forest.R
+│   │   │   ├── 03_plot_figure3c_cross_cell_smr_heatmap_effect_lines.R
+│   │   │   ├── 04_plot_figure3d_tier1_coloc_reference_style.R
+│   │   │   └── 05_assemble_figure3_final.R
+│   │   ├── scripts/
+│   │   │   ├── 01_run_finngen_discovery_smr_for_cell.py
+│   │   │   └── 02_summarize_finngen_discovery_smr_all_cells.py
+│   │   ├── tables/
+│   │   │   ├── 01_make_top_snp_rsid_mapping.py
+│   │   │   ├── 02_make_table_figure3_smr_coloc_integrated.R
+│   │   │   ├── 03_make_table1_smr_coloc_three_line.py
+│   │   │   └── 04_make_result2_supplementary_tables.R
+│   │   └── README.md
+│   ├── 03_meta_gwas_qc_pipeline/
+│   │   ├── config/
+│   │   │   └── gwas_dataset_manifest.example.tsv
+│   │   ├── figures/
+│   │   │   └── 01_plot_figure4_meta_gwas_qc.R
+│   │   ├── qc/
+│   │   │   ├── 01_prepare_ldsc_sumstats_ukb_approx_logor.py
+│   │   │   └── 03_run_standard_ldsc.py
+│   │   ├── scripts/
+│   │   │   ├── 01_standardize_discovery_gwas.py
+│   │   │   ├── 02_prepare_metal_inputs.py
+│   │   │   ├── 03_convert_ukb_i9_vte_to_approx_logor.py
+│   │   │   └── 04_run_meta_gwas_ukb_approx_logor.py
+│   │   ├── tables/
+│   │   │   ├── 01_make_result3_supplementary_tables.R
+│   │   │   └── 02_make_table_s8_standard_ldsc.py
+│   │   └── README.md
+│   ├── 04_meta_gwas_validation/
+│   │   ├── figures/
+│   │   │   └── 01_plot_figure5_tier_stratified_replication_forest.R
+│   │   ├── scripts/
+│   │   │   ├── 00_prepare_replication_candidates.py
+│   │   │   ├── 01_run_independent_meta_gwas_smr_validation.py
+│   │   │   ├── 01b_adjust_replication_smr_fdr.py
+│   │   │   └── 02_run_independent_meta_gwas_coloc_abf.R
+│   │   ├── tables/
+│   │   │   └── 01_make_table_s9_independent_meta_gwas_validation.R
+│   │   └── README.md
+│   └── 05_covid_hca_single_cell_validation/
+│       ├── analysis/
+│       │   ├── 01_prepare_covid_donor_pseudobulk.py
+│       │   ├── 02_build_candidate_detectability_qc.py
+│       │   ├── 03_score_cd8et_hallmark_programs.py
+│       │   ├── 04_run_donor_level_liana.py
+│       │   ├── 05_score_platelet_hallmark_programs.py
+│       │   ├── 06_build_high_low_hallmark_contrasts.py
+│       │   ├── 07_summarize_liana_high_low_contrasts.py
+│       │   └── 08_continuous_severity_sensitivity.py
+│       ├── config/
+│       │   ├── project_paths.example.tsv
+│       │   └── python_requirements.txt
+│       ├── figures/
+│       │   ├── 01_plot_figure6a_candidate_detectability.py
+│       │   ├── 02_plot_figure6b_workflow.py
+│       │   ├── 03_plot_figure6b_expression_grouping.py
+│       │   ├── 04_plot_figure6c_cd8et_hallmarks.py
+│       │   ├── 05_plot_figure6d_liana_distributions.py
+│       │   ├── 06_plot_figure6e_liana_effects.py
+│       │   ├── 07_plot_figure6f_platelet_hallmarks.py
+│       │   ├── 08_plot_supp_figure_s2_mapping.py
+│       │   ├── 09_plot_supp_figure_s2a_workflow.py
+│       │   ├── 10_plot_figure_s3_cd8et_severity.py
+│       │   ├── 11_plot_figure_s4_liana_severity.py
+│       │   └── 12_plot_figure_s5_platelet_severity.py
+│       ├── mapping/
+│       │   ├── 01_build_onek1k_centroids_and_map_hca_healthy.py
+│       │   ├── 02_make_lineage_aware_consensus_mapping.py
+│       │   ├── 03_prepare_seurat_label_transfer_inputs.py
+│       │   ├── 04_run_seurat_marker_panel_sensitivity.R
+│       │   ├── 05_compile_main_mapping_with_seurat_sensitivity.py
+│       │   └── 06_export_fixed_mapping_and_covid_counts.py
+│       ├── tables/
+│       │   ├── 01_build_table_s10_hca_onek1k_mapping.py
+│       │   ├── 02_build_table_s11_candidate_detectability.py
+│       │   ├── 03_prepare_table_s12_figure6_results.py
+│       │   ├── 04_format_table_s12_figure6_results.py
+│       │   └── 05_build_table_s13_severity_adjusted.py
+│       └── README.md
+├── tests/
+│   ├── test_current_manuscript.py
+│   └── test_release.py
+├── tools/
+│   ├── init_workspace.py
+│   ├── install_r_packages.R
+│   ├── package_supplementary_tables.py
+│   └── validate_release.py
+├── .gitattributes
+├── .gitignore
+├── README.md
+├── requirements.txt
+└── run.py

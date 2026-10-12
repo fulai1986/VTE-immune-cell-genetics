@@ -1,0 +1,7 @@
+dataset_id	role	trait	source	ancestry	cases	controls	access_status	local_raw_path	notes
+decode_chb_cvdc_dbds	independent_replication	VTE	deCODE_public	European	18569	213503	downloaded	gwas/download/vte_dkonly_hg19.txt.gz	CHB-CVDC/DBDS Denmark component from deCODE public summary statistics
+decode_iceland	independent_replication	VTE	deCODE_public	European	11700	311745	downloaded	gwas/download/vte_isonly_hg19.txt.gz	deCODE Iceland component from deCODE public summary statistics
+decode_intermountain	independent_replication	VTE	deCODE_public	European	6981	51252	downloaded	gwas/download/vte_usonly_hg19.txt.gz	Intermountain Healthcare US component from deCODE public summary statistics
+ukb_i9_vte	independent_replication	VTE	OpenGWAS	European_or_mixed	4620	356574	downloaded	gwas/download/ukb-d-I9_VTE.vcf.gz	UK Biobank ukb-d-I9_VTE; included in FinnGen-independent replication meta-GWAS
+finngen_r13_i9_vte	discovery	VTE	FinnGen_R13	Finnish_European	27928	472258	downloaded	gwas/replication/finngen_r13/finngen_R13_I9_VTE.gz	FinnGen discovery GWAS; excluded from the independent replication meta-analysis
+decode_full_meta	supplementary	VTE	deCODE_public_with_FinnGen	European			pending_download		Use only as power-enhanced sensitivity because it includes FinnGen Freeze 6

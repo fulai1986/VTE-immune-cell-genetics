@@ -1,0 +1,10 @@
+key	path	description
+project_dir	/path/to/onek1k_pbmc_eqtl	Local project workspace
+raw_counts_tar	/path/to/GSE196735_RAW.tar	OneK1K GEO raw count archive
+cellxgene_h5ad	/path/to/onek1k_cellxgene.h5ad	OneK1K CELLxGENE h5ad with cell metadata
+science_tables_xlsx	/path/to/science.abf3041_tables_s6_to_s19.xlsx	Science supplementary tables S6-S19
+science_sm_txt	/path/to/science.abf3041_sm_2.txt	Local text copy of Science supplementary methods
+imputation_dir	/path/to/imputation_zips	Michigan imputation server chromosome zip archives
+genotype_sample_map	/path/to/onek1k_genotype_sample_map.tsv	Genotype SampleID to donor_id map
+genotype_pc_table	/path/to/genotype_pca_scores.tsv	OneK1K genotype PC table
+gene_annotation	/path/to/gencode_v19_gene_annotation.tsv	GENCODE v19 gene annotation table

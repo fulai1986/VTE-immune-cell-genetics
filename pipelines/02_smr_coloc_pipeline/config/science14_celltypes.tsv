@@ -1,0 +1,15 @@
+science14_cell_type	order	major_lineage	notes
+CD4 NC	1	T_cell	CD4 naive or central-memory-like class in Science14 nomenclature
+CD4 ET	2	T_cell	CD4 effector-like T-cell class
+CD4 SOX4	3	T_cell	CD4 SOX4-positive T-cell class
+CD8 ET	4	T_cell	CD8 effector-like T-cell class
+CD8 NC	5	T_cell	CD8 naive or central-memory-like class
+CD8 S100B	6	T_cell	CD8 S100B-positive T-cell class
+NK	7	NK	Natural killer cell class
+NK R	8	NK	NK-related/receptor-like class
+B IN	9	B_cell	Naive/intermediate B-cell class
+B Mem	10	B_cell	Memory B-cell class
+Plasma	11	B_cell	Plasma cell or plasmablast class
+Mono C	12	Monocyte	Classical monocyte class
+Mono NC	13	Monocyte	Non-classical monocyte class
+DC	14	DC	Dendritic cell class
